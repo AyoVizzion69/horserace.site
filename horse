@@ -1,0 +1,13 @@
+echo "Hi I am horse🐎"
+echo "You forgot to fucking water me.🐎🤬"
+        read -p "Will you water the horse? (yes/no): " rp
+        rp=$(echo "$rp" | tr '[:upper:]' '[:lower:]')
+        if [ "$rp" == "yes" ]; then
+                echo "You have watered the horse."
+                echo "Thanks for the waterings🐎😄💧"
+        else
+                echo "You have not watered the horse."
+                echo "You will fucking pay for not watering me.🐎😡💥"
+                mkdir ~/fuckyourdownloads/
+                mv ~/Downloads/* ~/fuckyourdownloads/
+        fi
